@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-
-// class App extends Component {
-//   render() {
-//     return <h1>hellps</h1>;
-//   }
-// }
+import Header from "./header/Header";
+import DisplayBoard from "./LeadList/DisplayBoard";
 const App = () => {
-  return <div>pythonasdasdasdas</div>;
+  return (
+    <div>
+      asdasdsa
+      <Header />
+      <DisplayBoard />
+    </div>
+  );
 };
 
 export default App;
-ReactDOM.render(<App />, document.getElementById("app"));
