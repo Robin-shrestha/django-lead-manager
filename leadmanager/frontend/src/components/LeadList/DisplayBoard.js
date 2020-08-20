@@ -4,7 +4,7 @@ import LeadList from "./LeadList";
 
 const DisplayBoard = () => {
   return (
-    <div>
+    <div className="container">
       <AddForm />
       <LeadList />
     </div>

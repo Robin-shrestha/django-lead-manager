@@ -1,4 +1,10 @@
-import { ON_ERROR, ON_LOADING, FETCH_DATA } from "../reducers/BaseReducer";
+import {
+  ON_ERROR,
+  ON_LOADING,
+  FETCH_DATA,
+  ADD_DATA,
+  DELETE_DATA,
+} from "../reducers/BaseReducer";
 
 export const OnLoading = () => {
   return {
@@ -17,5 +23,19 @@ export const FetchData = (data) => {
   return {
     type: FETCH_DATA,
     payload: { data },
+  };
+};
+
+export const AddData = (data) => {
+  return {
+    type: ADD_DATA,
+    payload: { data },
+  };
+};
+
+export const DeleteData = (id) => {
+  return {
+    type: DELETE_DATA,
+    payload: { id },
   };
 };
